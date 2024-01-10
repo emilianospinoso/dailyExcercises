@@ -1,4 +1,4 @@
-package MaxiumAvgSubarray;
+package a03MaxiumAvgSubarray;
 
 import org.junit.jupiter.api.Test;
 

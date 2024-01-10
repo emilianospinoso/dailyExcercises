@@ -1,4 +1,4 @@
-package MaxiumAvgSubarray;
+package a03MaxiumAvgSubarray;
 
 public class SolutionSlidingWindow {
 

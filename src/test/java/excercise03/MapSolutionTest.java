@@ -10,7 +10,6 @@ import java.util.Set;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MapSolutionTest {
-
     @Test
     void returnNotDelivered() {
         int[] requested = {11, 2, 4, 11, 11, 2, 3};

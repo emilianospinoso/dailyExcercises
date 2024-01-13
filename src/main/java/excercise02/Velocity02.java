@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Velocity02 {
-        //8 minutos con 40
+        //8 minutos con 40 el 13 january
 
     public List<Integer> getIntersections(List<List<Integer>> listas) {
         List<Integer> intersections = new ArrayList<>();

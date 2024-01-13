@@ -19,6 +19,16 @@ class MapSolutionTest {
         MapSolution ms = new MapSolution();
         Set<Integer> result = ms.returnNotDelivered(requested, delivered);
         assertEquals(expected, result);
+    }
+
+    @Test
+    void returnNotDelivered2() {
+        int[] requested = {};
+        int[] delivered = {2, 4, 2, 11};
+        Set<Integer> expected = Set.of();
+        MapSolution ms = new MapSolution();
+        Set<Integer> result = ms.returnNotDelivered(requested, delivered);
+        assertEquals(expected, result);
 
     }
 }

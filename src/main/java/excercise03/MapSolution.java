@@ -8,6 +8,8 @@ public class MapSolution {
 
 
     public Set<Integer> returnNotDelivered(int[] ordereds, int[] delivereds) {
+        if(ordereds.length==0) return new HashSet<>(Set.of());
+
         Set<Integer> notDelivered = new HashSet<>();
         Map<Integer, Integer> mapDelivered = new HashMap<>();
         for (Integer delivered : delivereds) {
@@ -17,7 +19,7 @@ public class MapSolution {
 
         for (Integer order : ordereds) {
             if (mapDelivered.containsKey(order) && mapDelivered.get(order) > 0) {
-                mapDelivered.put(order, mapDelivered.getOrDefault(order, 0) - 1);
+                mapDelivered.put(order, mapDelivered.get(order) - 1);
             } else {
                 notDelivered.add(order);
             }

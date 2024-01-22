@@ -1,4 +1,4 @@
-package functionalProgramming01;
+package func01;
 
 import java.util.List;
 import java.util.function.Predicate;

@@ -1,4 +1,4 @@
-package FunctionalProgramming02Predicates;
+package fun02;
 
 import java.util.function.BiFunction;
 

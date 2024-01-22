@@ -13,6 +13,12 @@ public class Velocity02 {
         return intersections;
     }
 
+    public List<Integer> getIntersections(List<Integer> lista1, List<Integer> lista2) {
+        List<Integer> intersections = new ArrayList<>();
+        intersections = lista1.stream().filter(x->lista2.contains(x)).collect(Collectors.toList());
+        return intersections;
+    }
+
 
 }
 

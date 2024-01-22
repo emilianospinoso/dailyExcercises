@@ -1,4 +1,4 @@
-package functionalProgramming01;
+package func01;
 
 import org.junit.jupiter.api.Test;
 

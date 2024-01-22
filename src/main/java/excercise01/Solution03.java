@@ -2,38 +2,40 @@ package excercise01;
 
 import java.util.*;
 
-public class SolutionMonday {
+public class Solution03 {
 
-    public Set<Integer> pendings(int[] requested, int[] delivered) {
-        Set<Integer> pendigProducts = new HashSet<>();
+    public static void main(String[] args) {
+
+        int[] requested = {11, 2, 4, 11, 11, 2, 3};
+        int[] delivered = {11, 4, 2, 4};
+        Set<Integer> missingProducts = new HashSet<>();
+        missingProducts = calculateMissingProducts(requested, delivered);
+        System.out.println(missingProducts);
+
+    }
+
+    private static Set<Integer> calculateMissingProducts(int[] requested, int[] delivered) {
+        Set<Integer> missingProducts = new TreeSet<>();
         Map<Integer, Integer> deliveredMap = new HashMap<>();
-
-        for (Integer prod : delivered) {
-            deliveredMap.put(prod, deliveredMap.getOrDefault(prod, 0) + 1);
+        for (Integer deliver : delivered) {
+            deliveredMap.put(deliver, deliveredMap.getOrDefault(deliver, 0) + 1);
         }
-        System.out.println("the map");
-        System.out.println(deliveredMap);
 
         for (Integer req : requested) {
             if (deliveredMap.containsKey(req) && deliveredMap.get(req) > 0) {
                 deliveredMap.put(req, deliveredMap.getOrDefault(req, 0) - 1);
             } else {
-                pendigProducts.add(req);
+                missingProducts.add(req);
             }
-
         }
-        //Arrays.sort(pendigProducts);
-
-        return pendigProducts;
-
+        return missingProducts;
     }
 
+}
 
 
-
-
-    /*
-     Find missing products
+  /*
+    Find missing products
 When a customer reports missing items in their order, we need to check what products were not delivered correctly.
 Write an algorithm that receives two integer arrays:
 - `requested`: product ids of the items ordered by the customer.
@@ -59,5 +61,3 @@ MISSING PRODUCTS
            - 1 missing item of product 3.
    Thus, the algorithm must return [3, 11]
      */
-
-}

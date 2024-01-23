@@ -2,7 +2,7 @@ package interview;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class Exercise01Test {
 
@@ -10,5 +10,5 @@ class Exercise01Test {
     void validatePassword() {
         Exercise01 e1 = new Exercise01();
         assertEquals(e1.validatePassword("Jua@n1lala"),true);
-    }}
+    }
 }

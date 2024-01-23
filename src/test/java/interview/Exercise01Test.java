@@ -9,6 +9,6 @@ class Exercise01Test {
     @Test
     void validatePassword() {
         Exercise01 e1 = new Exercise01();
-        assertEquals(e1.validatePassword("Juan1lala"),true);
-    }
+        assertEquals(e1.validatePassword("Jua@n1lala"),true);
+    }}
 }

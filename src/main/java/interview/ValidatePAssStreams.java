@@ -15,7 +15,6 @@ public class ValidatePAssStreams {
         if (!containMinimumCharacters(password.length(), 6)) {
             return false;
         }
-
         if (hasUpperLetter(password) && passContainDigit(password) && containArroba(password) && hasDuplicatesChars(password)) {
             return true;
         }

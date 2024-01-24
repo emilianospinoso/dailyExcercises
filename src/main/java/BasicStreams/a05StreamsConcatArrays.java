@@ -5,7 +5,7 @@ import java.util.stream.Stream;
 
 public class a05StreamsConcatArrays {
     public static void main(String[] args) {
-        String[] names = {"juan", "maria", "SOmingo"};
+        String[] names = {"juan", "maria", "Domingo"};
         String[] names2 = {"richard", "Jose", "lopes"};
 
         String[] namesConcat = Stream.concat(
